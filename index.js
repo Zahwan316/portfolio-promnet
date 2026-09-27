@@ -1,9 +1,9 @@
 // Konfigurasi Efek
     const config = {
       maxParticles: 12,    // Jumlah maksimal jejak bulan sabit
-      fadeSpeed: 0.2,     // Kecepatan memudar (makin kecil makin panjang jejaknya)
-      shrinkSpeed: 2.2,   // Kecepatan mengecil
-      spawnDistance: 5,    // Jarak minimal kursor bergerak sebelum memunculkan partikel baru
+      fadeSpeed: 0.02,     // Kecepatan memudar 
+      shrinkSpeed: 0.02,   // Kecepatan mengecil
+      spawnDistance: 15,    // Jarak minimal kursor bergerak sebelum memunculkan partikel baru
     };
 
     let lastX = 0;

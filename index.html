@@ -31,6 +31,24 @@
         font-display: swap;
         src: url("asset/Poppins-Regular.ttf");
       }
+      ::-webkit-scrollbar {
+    width: 10px;               /* Lebar scrollbar vertikal */
+    height: 10px;              /* Tinggi scrollbar horizontal */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-primary); /* Warna track/latar belakang scrollbar */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-secondary); /* Warna batang scrollbar */
+    border-radius: 9999px;               /* Membuat ujungnya membulat */
+    border: 2px solid var(--color-primary); /* Jarak border agar terlihat rapi */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-third);     /* Warna saat di-hover */
+  }
   </style>
   
 </head>
@@ -202,9 +220,9 @@
     </section>
 
     <!-- Project Section -->
-    <section class="w-full relative min-h-[140vh] h-auto py-16 md:py-32 bg-[url('asset/wallpaper.jpg')] bg-cover bg-center px-6 md:px-20 lg:px-46 flex flex-col" id="project">
-      <div class="bg-linear-to-b from-primary/90 to-primary/20 absolute w-full left-0 top-0 h-64 z-1"></div>
-      <div class="absolute inset-0 bg-black/20 backdrop-blur-sm z-10"></div>
+    <section class="w-full relative min-h-[140vh] h-auto py-16 md:py-32 bg-[url('asset/wallpaper1.jpg')] bg-cover px-6 md:px-20 lg:px-46 flex flex-col" id="project">
+      <div class="bg-linear-to-b from-primary via-primary/90 to-transparent absolute w-full left-0 top-0 h-64 z-15"></div>
+      <div class="absolute inset-0 bg-black/20  z-10"></div>
       <div class="relative z-20 mb-12 md:mb-24">
         <h3 class="font-bold text-white text-3xl md:text-4xl mb-2">Project</h3>
         <p class="text-slate-300 text-base md:text-lg">Beberapa project yang pernah saya kerjakan</p>
@@ -335,21 +353,21 @@
             </form>
           </div>
           <div class="w-full lg:w-1/8 hidden lg:block">
-            <img src="asset/columbina2.png" alt="columbina" class="w-4xl left-156 absolute z-0" />
+            <img src="asset/columbina2.png" alt="columbina" class="w-4xl left-156 absolute z-0 hover:-rotate-z-20 transition .3s ease-out" />
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="w-full bg-[#0b132b] text-slate-300 border-t border-slate-800/80">
+    <footer class="w-full bg-[#0b132b] text-slate-300 ">
       <div class="max-w-7xl mx-auto px-6 py-12 md:py-16">
         <div class="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-12">
           
           <!-- Brand & Description -->
           <div class="space-y-3 max-w-sm">
             <h2 class="text-2xl font-extrabold text-white tracking-wide">
-              Skylakke<span class="text-third">.</span>
+              Skylakke<span class="text-third"></span>
             </h2>
           </div>
 
@@ -380,9 +398,9 @@
         </div>
 
         <!-- Divider & Bottom Bar -->
-        <div class="mt-12 pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+        <div class="mt-12 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
           <p>&copy; 2026 Skylakke. All rights reserved.</p>
-          <p class="font-mono text-slate-600">Built with HTML & Tailwind CSS</p>
+          <p class="font-mono text-slate-600">Made with pure heart</p>
         </div>
       </div>
     </footer>
