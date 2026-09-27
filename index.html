@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skylakke - Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/js/all.js"></script>
+  <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #0F1738;
+        --color-secondary: #1E295D;
+        --color-third: #60A5FA;
+        --color-tersier: #E0F2FE;
+        --font-display: "genshin", sans-serif;
+        --font-poppins: "poppins", sans-serif;
+      }
+  </style>
+  <style>
+      @font-face {
+        font-family: genshin;
+        font-style: normal;
+        font-weight: 200 700;
+        font-display: swap;
+        src: url("asset/zh-cn.ttf");
+      }
+      @font-face {
+        font-family: poppins;
+        font-style: normal;
+        font-display: swap;
+        src: url("asset/Poppins-Regular.ttf");
+      }
+  </style>
+  
+</head>
+<body class="overflow-x-hidden font-display">
+  <header class="fixed w-full text-white flex h-16 px-4 md:px-14 flex-row justify-between items-center z-99">
+    <h3 class="font-bold text-xl hover:text-third transition duration-300">Skylakke</h3>
+    <nav class="hidden md:block">
+      <ul class="flex gap-6 lg:gap-12">
+        <li>
+          <a href="#home" class="cursor-pointer hover:text-third transition duration-300">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="cursor-pointer hover:text-third transition duration-300">About</a>
+        </li>
+        <li>
+          <a href="#skill" class="cursor-pointer hover:text-third transition duration-300">Skill</a>
+        </li>
+        <li>
+          <a href="#project" class="cursor-pointer hover:text-third transition duration-300">Project</a>
+        </li>
+        <li>
+          <a href="#kontak" class="cursor-pointer hover:text-third transition duration-300">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#kontak">
+      <button class="bg-third px-4 md:px-6 py-2 rounded-xl font-bold cursor-pointer hover:brightness-110 hover:shadow-lg transition duration-300">
+        Kontak Saya
+      </button>
+    </a>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-[url('asset/wallpaper.jpg')] bg-cover bg-center relative w-full min-h-screen h-auto md:h-screen" id="home">
+      <div class="bg-linear-to-b from-secondary/23 to-secondary absolute w-full h-full z-5"></div>
+      <div class="relative flex items-center w-full h-full px-6 md:px-16 lg:px-46 z-6 py-24 md:py-0">
+        <div class="w-full md:w-2/4">
+          <h3 class="text-white font-bold text-2xl md:text-4xl mb-4">Full-Stack Developer & Game Developer Enthusiast.</h3>
+          <p class="text-slate-300 mb-8 text-base md:text-lg">Seorang nerd yang sangat penasaran tentang mekanisme dunia Game Development dan Web Development</p>
+          <button class="border border-third rounded-xl p-4 text-white font-bold cursor-pointer hover:bg-third hover:shadow-lg transition duration-300">Lihat Project Saya</button>
+        </div>
+        <div></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="w-full relative min-h-screen h-auto md:h-screen bg-secondary px-6 md:px-24 lg:px-64 flex flex-col md:flex-row items-center justify-center py-20 md:py-0" id="about">
+      <span class="text-[10rem] md:text-[20rem] lg:text-[30rem] text-transparent [-webkit-text-stroke:2px_#f4f4f420] left-0 font-bold absolute z-6 font-sans select-none pointer-events-none">ZAHWAN</span>
+      <div class="bg-linear-to-b from-[#1E295D] l to-primary left-0 top-32 absolute w-full h-full z-5"></div>
+      <div class="w-full md:w-3/4 z-6 mb-8 md:mb-0">
+        <h3 class="font-bold text-2xl md:text-3xl text-white mb-8">-- About me --</h3>
+        <p class="text-base md:text-lg text-white">
+            Saya seorang developer yang antusias di bidang Web Development dan Game Development.
+          Bagi saya, membangun software bukan cuma soal baris kode yang berjalan, tapi soal menyelesaikan masalah secara sistematis dan cermat.
+          <br><br>
+          Saya tipe orang yang suka membongkar alur logika hingga ketemu akar masalahnya, terbiasa bekerja mandiri dengan dorongan belajar yang tinggi (self-driven), dan tidak gampang menyerah saat menghadapi kendala teknis yang rumit.
+          Dalam tim, saya lebih suka komunikasi yang jelas, langsung pada poinnya, dan transparan. 
+        </p>
+      </div>
+      <div class="w-full md:w-1/2 z-6 flex justify-center">
+        <img src="asset/profile.png" class="saturate-0 w-full max-w-xs md:max-w-lg hover:saturate-100 transition duration-500" alt="Profile Zahwan" />
+      </div>
+    </section>
+
+    <!-- Skill Section -->
+    <section class="w-full relative min-h-[120vh] h-auto py-16 md:py-8 bg-primary px-6 md:px-24 lg:px-64 flex flex-col overflow-hidden" id="skill">
+      <div class="z-6 mb-12 md:mb-32">
+        <h2 class="text-white font-bold text-3xl md:text-4xl mb-2">Skill</h2>
+        <p class="text-base md:text-lg text-slate-300 ">Beberapa skill yang saya pelajari</p>
+      </div>
+      <div class="relative w-full max-w-3xl mx-auto pt-8 pb-20">
+        
+        <!-- Top Active Carousel Feature -->
+        <div class="flex items-center justify-center gap-4 md:gap-16 mb-16 relative z-10">
+          <!-- Left Arrow -->
+          <button class="text-white hover:text-third transition duration-300 p-2 cursor-pointer hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6 md:w-8 md:h-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+          </button>
+
+          <!-- Main Active Icon Box -->
+          <div class="flex flex-col items-center">
+            <div class="w-28 h-28 md:w-36 md:h-36 rounded-full bg-[#60A5FA] border-4 border-white flex items-center justify-center shadow-lg shadow-blue-500/20 hover:scale-105 transition duration-300">
+              <!-- HTML Window Illustration -->
+              <img src="asset/frontend.png" alt="Role Image" class="w-20 md:w-24" />
+            </div>
+            <!-- Label -->
+            <span class="mt-4 text-base md:text-xl font-bold text-white tracking-wide">Front End</span>
+          </div>
+
+          <!-- Right Arrow -->
+          <button class="text-white hover:text-third transition duration-300 p-2 cursor-pointer hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6 md:w-8 md:h-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Curved Arc Line Background -->
+        <div class="absolute top-28 left-1/2 -translate-x-1/2 w-[85%] h-[260px] border-b-2 border-slate-600/60 rounded-b-full pointer-events-none hidden sm:block"></div>
+
+        <!-- Tech Icons Along the Arc -->
+        <div class="relative w-full h-auto sm:h-32 flex flex-wrap sm:flex-nowrap justify-center sm:justify-between items-center sm:items-end gap-4 sm:gap-0 px-2 md:px-6 z-10">
+          
+          <!-- HTML5 (Far Left) -->
+          <div class="transform-none sm:-translate-y-12">
+            <div class="w-16 h-16 sm:w-24 sm:h-24 md:w-46 md:h-46 rounded-full bg-[#60A5FA] border-2 border-white flex items-center justify-center shadow-md hover:scale-110 transition duration-300 cursor-pointer">
+              <img src="asset/html.svg" alt="Language icon 1" class="w-10 sm:w-16" />
+            </div>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="transform-none sm:translate-y-2">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-32 md:h-32 rounded-full bg-[#60A5FA] border-2 border-white flex items-center justify-center shadow-md hover:scale-110 transition duration-300 cursor-pointer">
+              <!-- CSS3 Logo -->
+              <div class="w-8 h-8 md:w-10 md:h-10 bg-[#0277BD] flex items-center justify-center font-bold text-white text-sm md:text-lg">
+                3
+              </div>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="transform-none sm:translate-y-8">
+            <div class="w-14 h-14 md:w-24 md:h-24 rounded-full bg-[#60A5FA] border-2 border-white flex items-center justify-center shadow-md hover:scale-110 transition duration-300 cursor-pointer">
+              <!-- JS Badge -->
+              <div class="w-8 h-8 md:w-10 md:h-10 bg-[#F7DF1E] rounded-md flex items-center justify-center font-black text-black text-xs md:text-sm">
+                JS
+              </div>
+            </div>
+          </div>
+
+          <!-- TypeScript -->
+          <div class="transform-none sm:-translate-y-1">
+            <div class="w-14 h-14 md:w-20 md:h-20 rounded-full bg-[#60A5FA] border-2 border-white flex items-center justify-center shadow-md hover:scale-110 transition duration-300 cursor-pointer">
+              <!-- TS Badge -->
+              <div class="w-8 h-8 md:w-10 md:h-10 bg-[#3178C6] rounded-md flex items-center justify-center font-bold text-white text-xs md:text-sm">
+                TS
+              </div>
+            </div>
+          </div>
+
+          <!-- React -->
+          <div class="transform-none sm:-translate-y-12">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full bg-[#60A5FA] border-2 border-white flex items-center justify-center shadow-md hover:scale-110 transition duration-300 cursor-pointer">
+              <!-- React Atom Icon -->
+              <svg class="w-8 h-8 md:w-10 md:h-10 text-[#61DAFB]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                <ellipse cx="12" cy="12" rx="9" ry="3.5"/>
+                <ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(60 12 12)"/>
+                <ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(120 12 12)"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Next.js (Far Right) -->
+          <div class="transform-none sm:-translate-y-42">
+            <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#60A5FA] border-2 border-white flex items-center justify-center shadow-md hover:scale-110 transition duration-300 cursor-pointer">
+              <!-- Next.js Logo -->
+              <div class="w-8 h-8 md:w-10 md:h-10 bg-black rounded-full flex items-center justify-center border border-white/20">
+                <span class="text-white font-extrabold text-xs md:text-sm tracking-tighter">N\</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section class="w-full relative min-h-[140vh] h-auto py-16 md:py-32 bg-[url('asset/wallpaper.jpg')] bg-cover bg-center px-6 md:px-20 lg:px-46 flex flex-col" id="project">
+      <div class="bg-linear-to-b from-primary/90 to-primary/20 absolute w-full left-0 top-0 h-64 z-1"></div>
+      <div class="absolute inset-0 bg-black/20 backdrop-blur-sm z-10"></div>
+      <div class="relative z-20 mb-12 md:mb-24">
+        <h3 class="font-bold text-white text-3xl md:text-4xl mb-2">Project</h3>
+        <p class="text-slate-300 text-base md:text-lg">Beberapa project yang pernah saya kerjakan</p>
+      </div>
+      <div class="relative z-20 flex flex-col lg:flex-row gap-12 lg:gap-24 h-full">
+        <div class="border border-tersier/30 bg-primary/50 w-full lg:w-2/5 rounded-xl">
+          <div class="flex flex-row w-full justify-around p-4 md:p-6 rounded-tl-xl rounded-tr-xl bg-linear-to-b from-black/50">
+            <p class="text-white text-sm md:text-md cursor-pointer hover:border-b hover:text-white transition duration-200">All Project</p>
+            <p class="text-slate-300 text-sm md:text-md cursor-pointer hover:border-b hover:text-white transition duration-200">Web Dev</p>
+            <p class="text-slate-300 text-md cursor-pointer hover:border-b hover:text-white transition duration-200">Game Dev</p>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-8 p-4 md:p-6">
+            <!-- Project Item -->
+            <div class="rounded bg-tersier p-2 rounded-xl cursor-pointer border-2 hover:border-third transition duration-200 hover:scale-105">
+              <div class="w-full h-20 md:h-26">
+                <img src="asset/veterina.png" alt="Project" class="w-full h-full rounded-lg object-cover" />
+              </div>
+              <div class="w-full flex justify-center items-center mt-2">
+                <p class="text-sm md:text-base font-bold text-primary">Veterina</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="w-full lg:w-2/3 p-0 md:p-8 gap-8 md:gap-16 flex flex-col">
+          <div class="flex flex-col md:flex-row gap-8 md:gap-16">
+            <div class="border border-third p-4 rounded-xl w-full md:w-3/7 h-64 md:h-86">
+              <img src="asset/veterina.png" alt="Project Image Details" class="w-full h-full rounded-lg object-cover hover:scale-105 transition .3s" />
+            </div>
+            <div class="py-0 md:py-8 w-full md:w-1/3">
+              <h3 class="font-bold text-tersier text-3xl md:text-4xl mb-4">Veterina</h3>
+              <div class="font-bold">
+                <div class="flex flex-row text-white text-base md:text-lg font-sans items-center border-b border-white/40 mb-2 p-2 justify-between">
+                  <div class="flex flex-row items-center gap-2">
+                    <i class="fa-solid fa-user text-slate-300"></i>
+                    <p class="text-slate-300 font-display">Role: </p>
+                  </div>
+                  <p class="font-bold text-white">Fullstack</p>
+                </div>
+                <div class="flex flex-row text-white text-base md:text-lg font-sans items-center border-b border-white/40 mb-2 p-2 justify-between">
+                  <div class="flex flex-row items-center gap-2">
+                    <i class="fa-solid fa-list text-slate-300"></i>
+                    <p class="text-slate-300">Type: </p>
+                  </div>
+                  <p class="font-bold text-white font-display">Web</p>
+                </div>
+                <div class="flex flex-row text-white text-base md:text-lg font-sans items-center border-b border-white/40 mb-2 p-2 justify-between">
+                  <div class="flex flex-row items-center gap-2">
+                    <i class="fa-solid fa-server text-slate-300"></i>
+                    <p class="text-slate-300">Backend: </p>
+                  </div>
+                  <p class="font-bold text-white font-display">Laravel</p>
+                </div>
+                <div class="flex flex-row text-white text-base md:text-lg font-sans items-center border-b border-white/40 mb-2 p-2 justify-between">
+                  <div class="flex flex-row items-center gap-2">
+                    <i class="fa-solid fa-display text-slate-300"></i>
+                    <p class="text-slate-300">Frontend: </p>
+                  </div>
+                  <p class="font-bold text-white font-display">Laravel</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row gap-6 md:gap-12 w-full">
+            <div class="w-full md:w-2/3 backdrop-blur-sm min-h-32 bg-tersier/10 border border-white/25 rounded-xl p-4">
+              <p class="text-base md:text-lg text-slate-200">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos natus distinctio, iure, eum quaerat cupiditate, suscipit dolorem repellat accusantium fugit ipsum? Officiis minima tenetur dignissimos vitae ipsam ad eligendi molestiae.</p>
+            </div>
+            <div class="flex flex-col w-full md:w-1/3 justify-around gap-4 md:gap-0">
+              <button class="bg-third rounded-3xl cursor-pointer p-4 text-white font-bold w-full hover:brightness-110 hover:shadow-lg transition duration-300">Lihat Demo</button>
+              <button class="bg-white/5 border border-third p-4 rounded-3xl cursor-pointer text-white hover:bg-third/20 transition duration-300">Source Code</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-linear-to-b from-secondary/3 to-secondary absolute w-full h-full backdrop-blur-sm z-11 top-0 left-0 pointer-events-none"></div>
+    </section>
+
+    <!-- Pengalaman Section -->
+    <section class="w-full relative min-h-screen h-auto bg-secondary px-6 md:px-24 lg:px-64 flex flex-col py-20 md:py-0 justify-center" id="project">
+      <div class="relative z-20 mb-12 md:mb-24">
+        <h3 class="font-bold text-white text-3xl md:text-4xl mb-2">Pengalaman Kerja</h3>
+        <p class="text-slate-300 text-base md:text-lg">Pengalaman kerja yang pernah saya ikuti beserta posisinya</p>
+      </div>
+      <div>
+        <div class="w-full lg:w-2/3 h-auto bg-third -skew-x-0 md:-skew-x-12 rounded-lg flex flex-col md:flex-row items-center p-6 md:p-12 shadow-lg hover:shadow-2xl transition duration-300">
+          <div class="flex flex-col w-full md:w-3/4 skew-x-0 px-6 md:skew-x-12">
+            <h3 class="text-white mb-2 font-sans font-bold text-xl md:text-3xl">Teknologi Informasi dan Komunikasi Pendidikan Jawa Barat</h3>
+            <p class="text-white font-sans text-base md:text-lg mb-3">Fullstack Web Developer</p>
+            <span class="text-white font-sans mb-6 text-sm md:text-base">Juli 2023 - September 2023</span>
+            <ol start="1" type="1" class="list-decimal pl-4">
+              <li type="1" class="text-white font-sans text-sm md:text-base mb-2">Mengembangkan Sistem Informasi Sekolah berbasis Fullstack (ReactJS, ExpressJS, PostgreSQL) untuk mendigitalisasi dan mengotomatisasi proses administrasi Tata Usaha di lingkungan Disdik Jawa Barat.</li>
+              <li type="1" class="text-white font-sans text-sm md:text-base mb-2">Merancang arsitektur database relasional dengan PostgreSQL serta menerapkan state management menggunakan Zustand untuk memastikan performa aplikasi tetap ringan dan responsif.</li>
+              <li type="1" class="text-white font-sans text-sm md:text-base">Berhasil menyelesaikan dan mendistribusikan modul backend dan frontend tepat waktu, memangkas waktu pemrosesan data administrasi sekolah sebesar 30% dan mengurangi input manual staff TU.</li>
+            </ol>
+          </div>
+          <div class="w-full md:w-1/3 flex justify-center items-center mt-6 md:mt-0 skew-x-0 md:skew-x-12">
+            <img src="asset/tikomdik.jpeg" alt="tikomdik" class="rounded-full w-40 md:w-74 hover:scale-105 transition duration-300" />
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <!-- Kontak -->
+    <section class="w-full relative min-h-[120vh] h-auto bg-primary px-6 md:px-24 lg:px-64 flex flex-col justify-center py-24 md:py-0" id="kontak">
+      <div class="wave-divider absolute top-0 w-full left-0">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-secondary dark:fill-secondary"></path>
+        </svg>
+      </div>
+      <div class="z-6">
+        <h3 class="font-bold text-3xl md:text-4xl text-white mb-8 md:mb-16">Kontak Saya</h3>
+        <div class="flex flex-col lg:flex-row">
+          <div class="w-full lg:w-1/2 z-10">
+            <form action="" method="post" class="w-full pr-0 lg:pr-4">
+              <div class="flex flex-col mb-8">
+                <label for="nama" class="text-white text-base md:text-lg mb-4">Nama</label>
+                <input type="text" name="nama" id="nama" class="w-full h-10 bg-slate-200 rounded-xl px-2 focus:outline-none focus:ring-2 focus:ring-third transition duration-200" required/>
+              </div>
+              <div class="flex flex-col mb-8">
+                <label for="email" class="text-white text-base md:text-lg mb-4">Email</label>
+                <input type="email" name="email" id="email" class="w-full h-10 bg-slate-200 rounded-xl px-2 focus:outline-none focus:ring-2 focus:ring-third transition duration-200" required/>
+              </div>
+              <div class="flex flex-col mb-12">
+                <label for="pesan" class="text-white text-base md:text-lg mb-4">Pesan</label>
+                <textarea name="pesan" id="pesan" class="w-full h-32 bg-slate-200 rounded-xl p-2 focus:outline-none focus:ring-2 focus:ring-third transition duration-200" required></textarea>
+              </div>
+              <button type="submit" class="p-4 bg-third text-white rounded-xl w-full sm:w-sm cursor-pointer hover:brightness-110 hover:shadow-lg transition duration-300">Kirim</button>
+            </form>
+          </div>
+          <div class="w-full lg:w-1/8 hidden lg:block">
+            <img src="asset/columbina2.png" alt="columbina" class="w-4xl left-156 absolute z-0" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full bg-[#0b132b] text-slate-300 border-t border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-6 py-12 md:py-16">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-12">
+          
+          <!-- Brand & Description -->
+          <div class="space-y-3 max-w-sm">
+            <h2 class="text-2xl font-extrabold text-white tracking-wide">
+              Skylakke<span class="text-third">.</span>
+            </h2>
+          </div>
+
+          <!-- Quick Links Navigation -->
+          <div class="flex flex-col space-y-3">
+            <span class="text-xs font-bold uppercase tracking-widest text-third">Navigasi</span>
+            <ul class="flex flex-col gap-x-6 gap-y-2 text-sm font-medium">
+              <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+              <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+              <li><a href="#skill" class="hover:text-white transition-colors">Skill</a></li>
+              <li><a href="#project" class="hover:text-white transition-colors">Project</a></li>
+              <li><a href="#kontak" class="hover:text-white transition-colors">Kontak</a></li>
+            </ul>
+          </div>
+
+          <!-- Social / Action Links -->
+          <div class="flex flex-col space-y-3">
+            <span class="text-xs font-bold uppercase tracking-widest text-third">Tautan</span>
+            <div class="flex items-center gap-4 text-sm font-medium">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">GitHub</a>
+              <span class="text-slate-600">•</span>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">LinkedIn</a>
+              <span class="text-slate-600">•</span>
+              <a href="mailto:email@example.com" class="hover:text-white transition-colors">Email</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Divider & Bottom Bar -->
+        <div class="mt-12 pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+          <p>&copy; 2026 Skylakke. All rights reserved.</p>
+          <p class="font-mono text-slate-600">Built with HTML & Tailwind CSS</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
