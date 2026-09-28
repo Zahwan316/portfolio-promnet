@@ -1,3 +1,5 @@
+AOS.init();
+
 const config = {
   maxParticles: 12,    // Jumlah maksimal jejak bulan sabit
   fadeSpeed: 0.02,     // Kecepatan memudar 

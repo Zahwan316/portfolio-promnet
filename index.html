@@ -7,6 +7,9 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/js/all.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
   <style type="text/tailwindcss">
       @theme {
         --color-primary: #0F1738;
@@ -85,7 +88,7 @@
     <section class="bg-[url('asset/wallpaper.jpg')] bg-fixed bg-cover bg-center relative w-full min-h-screen h-auto md:h-screen" id="home">
       <div class="bg-linear-to-b from-secondary/23 to-secondary absolute w-full h-full z-5"></div>
       <div class="relative flex items-center w-full h-full px-6 md:px-16 lg:px-46 z-6 py-24 md:py-0">
-        <div class="w-full md:w-2/4">
+        <div data-aos="fade-up" class="w-full md:w-2/4">
           <h3 class="text-white font-bold text-2xl md:text-4xl mb-4">Full-Stack Developer & Game Developer Enthusiast.</h3>
           <p class="text-slate-300 mb-8 text-base md:text-lg">Seorang nerd yang sangat penasaran tentang mekanisme dunia Game Development dan Web Development</p>
           <button class="border border-third rounded-xl p-4 text-white font-bold cursor-pointer hover:bg-third hover:shadow-lg transition duration-300">Lihat Project Saya</button>
@@ -98,8 +101,8 @@
     <section class="w-full relative min-h-screen h-auto md:h-screen bg-secondary px-6 md:px-24 lg:px-64 flex flex-col md:flex-row items-center justify-center py-20 md:py-0" id="about">
       <span class="text-[10rem] md:text-[20rem] lg:text-[30rem] text-transparent [-webkit-text-stroke:2px_#f4f4f420] left-0 font-bold absolute z-6 font-sans select-none pointer-events-none">ZAHWAN</span>
       <div class="bg-linear-to-b from-[#1E295D] l to-primary left-0 top-32 absolute w-full h-full z-5"></div>
-      <div class="w-full md:w-3/4 z-6 mb-8 md:mb-0">
-        <h3 class="font-bold text-2xl md:text-3xl text-white mb-8">-- About me --</h3>
+      <div data-aos="fade-up" class="w-full md:w-3/4 z-6 mb-8 md:mb-0">
+        <h3  class="font-bold text-2xl md:text-3xl text-white mb-8">-- About me --</h3>
         <p class="text-base md:text-lg text-white">
             Saya seorang developer yang antusias di bidang Web Development dan Game Development.
           Bagi saya, membangun software bukan cuma soal baris kode yang berjalan, tapi soal menyelesaikan masalah secara sistematis dan cermat.
@@ -108,7 +111,7 @@
           Dalam tim, saya lebih suka komunikasi yang jelas, langsung pada poinnya, dan transparan. 
         </p>
       </div>
-      <div class="w-full md:w-1/2 z-6 flex justify-center">
+      <div data-aos="fade-up" class="w-full md:w-1/2 z-6 flex justify-center">
         <img src="asset/profile.png" class="saturate-0 w-full max-w-xs md:max-w-lg hover:saturate-100 transition duration-500" alt="Profile Zahwan" />
       </div>
     </section>
@@ -155,14 +158,14 @@
         <div class="relative w-full h-auto sm:h-32 flex flex-wrap sm:flex-nowrap justify-center sm:justify-between items-center sm:items-end gap-4 sm:gap-0 px-2 md:px-6 z-10">
           
           <!-- HTML5 (Far Left) -->
-          <div class="transform-none sm:-translate-y-12">
+          <div data-aos="fade-right" data-aos-duration="1000" class="transform-none sm:-translate-y-12">
             <div class="w-16 h-16 sm:w-24 sm:h-24 md:w-46 md:h-46 rounded-full bg-[#60A5FA] border-2 border-white flex items-center justify-center shadow-md hover:scale-110 transition duration-300 cursor-pointer">
               <img src="asset/html.svg" alt="Language icon 1" class="w-10 sm:w-16" />
             </div>
           </div>
 
           <!-- CSS3 -->
-          <div class="transform-none sm:translate-y-2">
+          <div data-aos="fade-up" data-aos-duration="1200" class="transform-none sm:translate-y-2">
             <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-32 md:h-32 rounded-full bg-[#60A5FA] border-2 border-white flex items-center justify-center shadow-md hover:scale-110 transition duration-300 cursor-pointer">
               <!-- CSS3 Logo -->
               <div class="w-8 h-8 md:w-10 md:h-10 bg-[#0277BD] flex items-center justify-center font-bold text-white text-sm md:text-lg">
@@ -172,7 +175,7 @@
           </div>
 
           <!-- JavaScript -->
-          <div class="transform-none sm:translate-y-8">
+          <div data-aos="fade-up" data-aos-duration="1400" class="transform-none sm:translate-y-8">
             <div class="w-14 h-14 md:w-24 md:h-24 rounded-full bg-[#60A5FA] border-2 border-white flex items-center justify-center shadow-md hover:scale-110 transition duration-300 cursor-pointer">
               <!-- JS Badge -->
               <div class="w-8 h-8 md:w-10 md:h-10 bg-[#F7DF1E] rounded-md flex items-center justify-center font-black text-black text-xs md:text-sm">
@@ -182,7 +185,7 @@
           </div>
 
           <!-- TypeScript -->
-          <div class="transform-none sm:-translate-y-1">
+          <div data-aos="fade-up" data-aos-duration="1600" class="transform-none sm:-translate-y-1">
             <div class="w-14 h-14 md:w-20 md:h-20 rounded-full bg-[#60A5FA] border-2 border-white flex items-center justify-center shadow-md hover:scale-110 transition duration-300 cursor-pointer">
               <!-- TS Badge -->
               <div class="w-8 h-8 md:w-10 md:h-10 bg-[#3178C6] rounded-md flex items-center justify-center font-bold text-white text-xs md:text-sm">
@@ -192,7 +195,7 @@
           </div>
 
           <!-- React -->
-          <div class="transform-none sm:-translate-y-12">
+          <div data-aos="fade-up" data-aos-duration="1800" class="transform-none sm:-translate-y-12">
             <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full bg-[#60A5FA] border-2 border-white flex items-center justify-center shadow-md hover:scale-110 transition duration-300 cursor-pointer">
               <!-- React Atom Icon -->
               <svg class="w-8 h-8 md:w-10 md:h-10 text-[#61DAFB]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -205,7 +208,7 @@
           </div>
 
           <!-- Next.js (Far Right) -->
-          <div class="transform-none sm:-translate-y-42">
+          <div data-aos="fade-up" data-aos-duration="2000" class="transform-none sm:-translate-y-42">
             <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#60A5FA] border-2 border-white flex items-center justify-center shadow-md hover:scale-110 transition duration-300 cursor-pointer">
               <!-- Next.js Logo -->
               <div class="w-8 h-8 md:w-10 md:h-10 bg-black rounded-full flex items-center justify-center border border-white/20">
@@ -228,7 +231,7 @@
         <p class="text-slate-300 text-base md:text-lg">Beberapa project yang pernah saya kerjakan</p>
       </div>
       <div class="relative z-20 flex flex-col lg:flex-row gap-12 lg:gap-24 h-full">
-        <div class="border border-tersier/30 bg-primary/50 w-full lg:w-2/5 rounded-xl">
+        <div data-aos="flip-right" class="border border-tersier/30 bg-primary/50 w-full lg:w-2/5 rounded-xl">
           <div class="flex flex-row w-full justify-around p-4 md:p-6 rounded-tl-xl rounded-tr-xl bg-linear-to-b from-black/50">
             <p class="text-white text-sm md:text-md cursor-pointer hover:border-b hover:text-white transition duration-200" id="menu_project">All Project</p>
             <p class="text-slate-300 text-sm md:text-md cursor-pointer hover:border-b hover:text-white transition duration-200" id="menu_webdev">Web Dev</p>
@@ -248,7 +251,7 @@
 
           </div>
         </div>
-        <div class="w-full lg:w-2/3 p-0 md:p-8 gap-8 md:gap-16 flex flex-col">
+        <div data-aos="flip-left" class="w-full lg:w-2/3 p-0 md:p-8 gap-8 md:gap-16 flex flex-col">
           <div class="flex flex-col md:flex-row gap-8 md:gap-16">
             <div class="border border-third p-4 rounded-xl w-full md:w-3/7 h-64 md:h-86">
               <img src="asset/veterina.png" alt="Project Image Details" class="w-full h-full rounded-lg object-cover hover:scale-105 transition .3s" id="project_img_showcase" />
