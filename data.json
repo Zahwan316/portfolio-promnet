@@ -7,11 +7,11 @@
       "type": "Web",
       "backend": "Laravel",
       "frontend": "Laravel Tailwindcss",
-      "description": "Lorem Ipsum dolor sit amet constectur adipiscing elit",
-      "img": "asset/",
+      "description": "Sebuah platform transformasi digital yang dirancang untuk menyederhanakan dan mengelola catatan Inseminasi Buatan (IB) pada ternak, dengan fokus utama pada peternakan sapi.",
+      "img": "asset/veterina.png",
       "year": 2026,
-      "demo": "https://",
-      "source": "https://github.com/Zahwan316/"
+      "demo": "https://ekokaryoveterina.my.id/",
+      "source": "https://github.com/Zahwan316/veterina"
     },
     {
       "id": 2,
@@ -20,25 +20,13 @@
       "type": "Mobile",
       "backend": "Laravel",
       "frontend": "React Native Tailwindcss",
-      "description": "Lorem Ipsum dolor sit amet constectur adipiscing elit",
-      "img": "asset/",
+      "description": "Aplikasi bidan digital untuk melayani kesehatan ibu dan anak, dimana fiturnya bisa booking pelayanan bayi tanpa harus mengantri ke bidan, rekam riwayat USG, rekam riwayat kehamilan, dll",
+      "img": "asset/Akesia.png",
       "year": 2025,
       "demo": "https://",
-      "source": "https://github.com/Zahwan316/"
+      "source": "https://github.com/Zahwan316/https://github.com/Zahwan316/AKESIA_Mobile"
     },
-    {
-      "id": 3,
-      "nama": "siDORA (Sistem Donor Darah)",
-      "role": "Fullstack",
-      "type": "Web",
-      "backend": "Codeigniter",
-      "frontend": "CodeIgniter Tailwindcss",
-      "description": "Lorem Ipsum dolor sit amet constectur adipiscing elit",
-      "img": "asset/",
-      "year": 2025,
-      "demo": "https://",
-      "source": "https://github.com/Zahwan316/"
-    },
+    
     {
       "id": 4,
       "nama": "SMEA-Digital (Sistem Perpustakaan)",
@@ -46,36 +34,36 @@
       "type": "Web",
       "backend": "ExpressJS",
       "frontend": "React Tailwindcss",
-      "description": "Lorem Ipsum dolor sit amet constectur adipiscing elit",
-      "img": "asset/",
-      "year": 2025,
+      "description": "Ini adalah proyek akhir saya saat SMK aplikasinya menyerupai perpustakaan daring yang memungkinkan pengguna meminjam dan membaca buku secara langsung di situs web tersebut.",
+      "img": "asset/smea-digital.png",
+      "year": 2024,
       "demo": "https://",
-      "source": "https://github.com/Zahwan316/"
+      "source": "https://github.com/Zahwan316/ujikom-perpustakaan"
     },
     {
       "id": 5,
       "nama": "One Punch Man (Fighting Game)",
-      "role": "Fullstack",
+      "role": "Indie GameDev",
       "type": "Game",
       "backend": "-",
       "frontend": "HTML, CSS, Javascript",
-      "description": "Lorem Ipsum dolor sit amet constectur adipiscing elit",
-      "img": "asset/",
-      "year": 2025,
-      "demo": "https://",
-      "source": "https://github.com/Zahwan316/"
+      "description": "Game bertema fighting dimana antara saitama melawan garou. Dimana fitur gamenya ada gacha banner, player juga bisa memilih map dan mengeluarkan skill",
+      "img": "asset/one-punch-man.png",
+      "year": 2022,
+      "demo": "https://opmanskylakke.netlify.app",
+      "source": "opmanskylakke.netlify.app"
     },
     {
       "id": 6,
       "nama": "Es Doger (Tap Game)",
-      "role": "Fullstack",
+      "role": "Indie GameDev",
       "type": "Game",
       "backend": "-",
       "frontend": "Unity",
-      "description": "Lorem Ipsum dolor sit amet constectur adipiscing elit",
-      "img": "asset/",
-      "year": 2025,
-      "demo": "https://",
+      "description": "Game dengan sistem tap tap mirip game tahu bulat, dimana kita bisa mengupgrade alat, kendaraan, bahan-bahan, dll. Task kita hanya tap layar agar pelanggan datang membeli dagangan kita",
+      "img": "asset/es_doger.jpg",
+      "year": 2023,
+      "demo": "https://drive.google.com/file/d/1Wyn_mIO2CwGS9-BMRKSL9k-Qlks0ea5t/view?usp=drive_link",
       "source": "https://github.com/Zahwan316/"
     },
     {
@@ -85,11 +73,210 @@
       "type": "Web",
       "backend": "ExpressJS",
       "frontend": "React Tailwindcss",
-      "description": "Lorem Ipsum dolor sit amet constectur adipiscing elit",
-      "img": "asset/",
-      "year": 2025,
+      "description": "Aplikasi chat realtime menggunakan nodejs websocket, dimana anda bisa chat dengan teman hanya dengan mencari nama emailnya dan bisa melihat status teman",
+      "img": "asset/ChatWithU.png",
+      "year": 2024,
       "demo": "https://",
+      "source": "https://github.com/Zahwan316/Chat-With-U"
+    },
+    {
+      "id": 8,
+      "nama": "Go Tambang",
+      "role": "Indie GameDev",
+      "type": "Game",
+      "backend": "-",
+      "frontend": "HTML, CSS, JS",
+      "description": "Game tarik tambang berbasis website, dimana para player harus saling tarik menarik tambang sampai batas",
+      "img": "asset/go-tambang.png",
+      "year": 2023,
+      "demo": "https://go-tambang.netlify.app",
       "source": "https://github.com/Zahwan316/"
     }
+  ],
+  "skill":[
+    {
+      "type": "frontend",
+      "img": "asset/frontend.png",
+      "data": [
+        {
+          "id": 1,
+          "name": "html",
+          "img": "asset/html.svg"
+        },
+        {
+          "id": 2,
+          "name": "css",
+          "img": "asset/css.svg"
+        },
+        {
+          "id": 3,
+          "name": "javascript",
+          "img": "asset/javascript.svg"
+        },
+        {
+          "id": 4,
+          "name": "typescript",
+          "img": "asset/typescript.svg"
+        },
+        {
+          "id": 5,
+          "name": "react",
+          "img": "asset/React.svg"
+        },
+        {
+          "id": 6,
+          "name": "nextjs",
+          "img": "asset/NextJs.svg"
+        },
+        {
+          "id": 7,
+          "name": "tailwind",
+          "img": "asset/tailwind.svg"
+        },
+        {
+          "id": 8,
+          "name": "bootstrap",
+          "img": "asset/bootstrap.svg"
+        },
+        {
+          "id": 9,
+          "name": "wordpress",
+          "img": "asset/wordpress.svg"
+        }
+      ]
+    },
+    {
+      "type": "backend",
+      "img": "asset/backend.png",
+      "data": [
+        {
+          "id": 10,
+          "name": "php",
+          "img": "asset/php.svg"
+        },
+        {
+          "id": 11,
+          "name": "laravel",
+          "img": "asset/laravel.svg"
+        },
+        {
+          "id": 12,
+          "name": "nodejs",
+          "img": "asset/node-js.svg"
+        },
+        {
+          "id": 13,
+          "name": "expressjs",
+          "img": "asset/express.svg"
+        },
+        {
+          "id": 14,
+          "name": "go",
+          "img": "asset/go.svg"
+        }
+      ]
+    },
+    {
+      "type": "mobile",
+      "img": "asset/mobile-developer.png",
+      "data": [
+        {
+          "id": 15,
+          "name": "react native",
+          "img": "asset/react-native.svg"
+        },
+        {
+          "id": 16,
+          "name": "dart",
+          "img": "asset/dart.svg"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "img": "asset/server.png",
+      "data": [
+        {
+          "id": 17,
+          "name": "mysql",
+          "img": "asset/mysql.svg"
+        },
+        {
+          "id": 18,
+          "name": "postgresql",
+          "img": "asset/postgresql.svg"
+        }
+      ]
+    },
+    {
+      "type": "game dev",
+      "img": "asset/game-development.png",
+      "data": [
+        {
+          "id": 19,
+          "name": "c#",
+          "img": "asset/c-sharp.svg",
+          "type": "game dev"
+        },
+        {
+          "id": 20,
+          "name": "unity",
+          "img": "asset/unity.svg",
+          "type": "game dev"
+        },
+        {
+          "id": 21,
+          "name": "blender",
+          "img": "asset/blender.svg",
+          "type": "game dev"
+        },
+        {
+          "id": 22,
+          "name": "aseprite",
+          "img": "asset/aseprite.svg",
+          "type": "game dev"
+        },
+        {
+          "id": 23,
+          "name": "gdevelop",
+          "img": "asset/gdevelo.jpeg",
+          "type": "game dev"
+        }
+      ]
+    },
+    {
+      "type": "another language",
+      "img": "asset/another.png",
+      "data": [
+        {
+          "id": 24,
+          "name": "python",
+          "img": "asset/python.svg"
+        }
+      ]
+    },
+    {
+      "type": "design",
+      "img": "asset/design.png",
+      "data": [
+        {
+          "id": 25,
+          "name": "figma",
+          "img": "asset/figma.svg"
+        }
+      ]
+    },
+    {
+      "type": "version control system",
+      "img": "asset/version-control.png",
+      "data": [
+        {
+          "id": 26,
+          "name": "Git",
+          "img": "asset/git.svg"
+        }
+      ]
+    }
   ]
+  
 }
