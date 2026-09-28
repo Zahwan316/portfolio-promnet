@@ -1,0 +1,95 @@
+{
+  "project": [
+    {
+      "id": 1,
+      "nama": "Veterina",
+      "role": "Fullstack",
+      "type": "Web",
+      "backend": "Laravel",
+      "frontend": "Laravel Tailwindcss",
+      "description": "Lorem Ipsum dolor sit amet constectur adipiscing elit",
+      "img": "asset/",
+      "year": 2026,
+      "demo": "https://",
+      "source": "https://github.com/Zahwan316/"
+    },
+    {
+      "id": 2,
+      "nama": "AKESIA",
+      "role": "Fullstack",
+      "type": "Mobile",
+      "backend": "Laravel",
+      "frontend": "React Native Tailwindcss",
+      "description": "Lorem Ipsum dolor sit amet constectur adipiscing elit",
+      "img": "asset/",
+      "year": 2025,
+      "demo": "https://",
+      "source": "https://github.com/Zahwan316/"
+    },
+    {
+      "id": 3,
+      "nama": "siDORA (Sistem Donor Darah)",
+      "role": "Fullstack",
+      "type": "Web",
+      "backend": "Codeigniter",
+      "frontend": "CodeIgniter Tailwindcss",
+      "description": "Lorem Ipsum dolor sit amet constectur adipiscing elit",
+      "img": "asset/",
+      "year": 2025,
+      "demo": "https://",
+      "source": "https://github.com/Zahwan316/"
+    },
+    {
+      "id": 4,
+      "nama": "SMEA-Digital (Sistem Perpustakaan)",
+      "role": "Fullstack",
+      "type": "Web",
+      "backend": "ExpressJS",
+      "frontend": "React Tailwindcss",
+      "description": "Lorem Ipsum dolor sit amet constectur adipiscing elit",
+      "img": "asset/",
+      "year": 2025,
+      "demo": "https://",
+      "source": "https://github.com/Zahwan316/"
+    },
+    {
+      "id": 5,
+      "nama": "One Punch Man (Fighting Game)",
+      "role": "Fullstack",
+      "type": "Game",
+      "backend": "-",
+      "frontend": "HTML, CSS, Javascript",
+      "description": "Lorem Ipsum dolor sit amet constectur adipiscing elit",
+      "img": "asset/",
+      "year": 2025,
+      "demo": "https://",
+      "source": "https://github.com/Zahwan316/"
+    },
+    {
+      "id": 6,
+      "nama": "Es Doger (Tap Game)",
+      "role": "Fullstack",
+      "type": "Game",
+      "backend": "-",
+      "frontend": "Unity",
+      "description": "Lorem Ipsum dolor sit amet constectur adipiscing elit",
+      "img": "asset/",
+      "year": 2025,
+      "demo": "https://",
+      "source": "https://github.com/Zahwan316/"
+    },
+    {
+      "id": 7,
+      "nama": "Chat With U",
+      "role": "Fullstack",
+      "type": "Web",
+      "backend": "ExpressJS",
+      "frontend": "React Tailwindcss",
+      "description": "Lorem Ipsum dolor sit amet constectur adipiscing elit",
+      "img": "asset/",
+      "year": 2025,
+      "demo": "https://",
+      "source": "https://github.com/Zahwan316/"
+    }
+  ]
+}
